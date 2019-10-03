@@ -12,6 +12,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+::-webkit-scrollbar { 
+  display: none; 
 }
 body {
   color: var(--mainBlack);
@@ -38,6 +43,12 @@ body {
   justify-content: space-between;
   padding: 0 1.5rem;
 }
+.logo_img{
+  position: absolute;
+  transform: scale(0.7);
+  right: 50px;
+  
+}
 .nav-icon {
   font-size: 1.5rem;
 }
@@ -58,7 +69,7 @@ body {
 /* --------------- Hero ---------------- */
 .hero {
   min-height: calc(100vh - 60px);
-  background: url("./images/hero-bcg.jpeg") center/cover no-repeat;
+  background: url("./images/bgImg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,6 +79,7 @@ body {
   background: rgba(255, 255, 255, 0.8);
   display: inline-block;
   padding: 2rem;
+  height: 250px;
 }
 .banner-title {
   font-size: 3.4rem;
@@ -85,6 +97,7 @@ body {
   border: 1px solid var(--primaryColor);
   transition: var(--mainTransition);
   cursor: pointer;
+  text-decoration: none;
 }
 .banner-btn:hover {
   background: transparent;
