@@ -18,6 +18,7 @@ const cartItems = document.querySelector('.cart-items');
 const cartTotal = document.querySelector('.cart-total');
 const cartContent = document.querySelector('.cart-content');
 const productsDom = document.querySelector('.products-center');
+
 // cart
 let cart = [];
 
@@ -210,6 +211,7 @@ class UI {
         return buttonsDom.find(button => button.dataset.id === id);
 
     }
+    
 }
 
 
@@ -242,5 +244,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }).then(() => {
         ui.getBagButtons();
         ui.cartLogic()
+       
     })
 })
